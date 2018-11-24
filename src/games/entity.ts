@@ -4,6 +4,7 @@ import { IsString, IsJSON } from 'class-validator'
 
 
 
+
 const defaultBoard = [
 	['o', 'o', 'o'],
 	['o', 'o', 'o'],

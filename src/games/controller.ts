@@ -40,9 +40,7 @@ export default class GameController {
 
     @Post('/games')
     @HttpCode(201)
-    createGame(
-      @Body() game: Game
-    ) {
+    createGame(@Body() game: Game) {
       game.color = colors[Math.floor(Math.random() * colors.length)]
       return game.save()
     }
